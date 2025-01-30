@@ -57,7 +57,7 @@ const Exam = () => {
 			<tbody>
 				{students.map((student,i)=> {
 					return (
-						<tr>
+						<tr key={i}>
 							<td>{i + 1}</td>
 							<td>{student.firstName}</td>
 							<td>{student.lastName}</td>
